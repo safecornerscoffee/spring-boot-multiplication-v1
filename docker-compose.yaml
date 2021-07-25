@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mariadb:
+    image: mariadb:10.5
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: multiplication
+      MARIADB_DATABASE: multiplication
+      MARIADB_USER: multiplication
+      MARIADB_PASSWORD: multiplication
+    ports:
+    - 3306:3306

@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/multiplication
+    username: multiplication
+    password: multiplication
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+  devtools:
+    livereload:
+      enabled: true
+
+logging:
+  level:
+    org.springframework: debug
+    org.hibernate.sql: debug
+
+
+
